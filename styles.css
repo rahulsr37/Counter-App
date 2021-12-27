@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;
+}
+
+.counterBox{
+    background: linear-gradient();
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.counterBox h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+#counterValue {
+    position: relative;
+    left: 40%;
+    top: 15%;
+    font-size: 100px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#increment{
+    margin-right: 100px;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+#decrement{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.btn{
+    height: 40px;
+    width: 80px;
+}
+
+.btn:active {
+    transform: scale(0.90);
+}
