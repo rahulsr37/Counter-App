@@ -7,11 +7,19 @@ let counter = 0;
 increment.addEventListener("click", ()=>{
     counter++;
     counterValue.innerHTML = counter;
-    counterValue.style.color = "green";
+    if(counter < 0){
+        counterValue.style.color = "red";
+    }else{
+        counterValue.style.color = "green";
+    }
 })
 
 decrement.addEventListener("click", ()=>{
     counter--;
     counterValue.innerHTML = counter;
-    counterValue.style.color = "red";
+    if(counter < 0){
+        counterValue.style.color = "red";
+    }else{
+        counterValue.style.color = "green";
+    }
 })
